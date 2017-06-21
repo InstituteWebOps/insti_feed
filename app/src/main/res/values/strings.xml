@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Flexmimic</string>
+    <string-array name="spinner_list_item_array">
+        <item>My flex</item>
+        <item>Liked flex</item>
+        <item>Past Flex</item>
+    </string-array>
+    <string name="des" >This four week summer school provides an introduction into key TUM research areas such as geodesy and engineering as well as sustainable management of natural resources. A particular highlight of the course is an intensive seminar of several days taking place at the Wettzell observatory and Straubing Centre of Science.
+
+In addition to this subject-specific content, the course program is supplemented by a German language course at various levels as well as cultural and free-time events. Including visits to sights in and around Munich and also the city´s cultural scene.</string>
+<string name="desmfi">The IIT Madras Alumni – Student mentoring Program is an online program to facilitate a means of interaction and networking between the experienced Alumni and the students of our institute. The working of the website will be similar to the social – networking websites that we use daily but built specifically to meet the mentoring needs of the students. Each student will be assigned to an experienced alumni based on his/her career interest. Typically we expect that, these alumni will mentor the students throughout the year and help them in shaping their career. In this typically year long relationship a student can look forward to guidance, counseling and career related advice from their mentors and benefit from it. Live Mentoring sessions will also be organised from time to time where mentees can directly meet their mentors and interact.
+
+“Mentorship refers to a developmental relationship between a more experienced professional and a less experienced protégé or mentee. The mentor is someone who has ´been there, done that´ before. Mentors inspire their mentee to follow their dreams.”</string>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wed 14 Jun 2017"
+        android:id="@+id/tv_maindate"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cv_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/bt_show"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:background="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/v_top"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp">
+
+            </ImageButton>
+            <TextView
+                android:id="@+id/tv_org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="Institute Mobops" />
+            <TextView
+                android:id="@+id/tv_briefdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/v_top"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                android:text="TextView " />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_des"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_below="@+id/tv_briefdes"
+                android:text="@string/des"
+                android:textSize="20dp"
+                android:textColor="#757575"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_event"
+                android:layout_below="@+id/tv_des"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_event_note_black_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_date"
+                android:layout_height="wrap_content"
+                android:text="Wed 14 Jun,2017"
+                android:layout_toRightOf="@+id/bt_event"
+                android:layout_alignTop="@+id/bt_event"
+                android:layout_marginRight="10dp"
+                android:textSize="16dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_time"
+                android:layout_below="@+id/bt_event"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_access_alarms_black_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_time"
+                android:text="10.00 AM"
+                android:layout_toRightOf="@+id/bt_time"
+                android:layout_alignTop="@+id/bt_time"
+                android:layout_marginRight="10dp"
+                android:textSize="16dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_loc"
+                android:layout_below="@+id/bt_time"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_location_on_black_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_loc"
+                android:text="CLT Hall"
+                android:layout_toRightOf="@+id/bt_loc"
+                android:layout_alignTop="@+id/bt_loc"
+                android:layout_marginRight="10dp"
+                android:textSize="16dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:color="#000000"
+                android:layout_below="@+id/tv_org"
+                android:id="@+id/v_top" />
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/v_bottom"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@+id/tv_loc"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/bt_share"
+                android:background="#ffffff"
+                android:src="@drawable/ic_share_black_24dp"
+                android:layout_below="@+id/v_bottom"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_save"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/v_bottom"
+                android:layout_toRightOf="@+id/bt_share"
+                android:background="#ffffff"
+                android:src="@drawable/ic_save_black_24dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bt_save"
+                android:layout_margin="10dp"
+                android:id="@+id/bt_sched"
+                android:layout_below="@+id/v_bottom"
+                android:background="#ffffff"
+                android:src="@drawable/ic_schedule_black_24dp"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bt_sched"
+                android:id="@+id/bt_contact"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/v_bottom"
+                android:background="#ffffff"
+                android:src="@drawable/ic_email_black_24dp"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
